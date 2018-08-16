@@ -1,0 +1,11 @@
+运行环境：
+
+语言：
+Python 3.7
+
+第三方库：
+requests    2.19.1
+pandas    0.23.3
+beautifulsoup4    4.6.1
+urllib3    1.23
+cryptocmd    0.4.1
