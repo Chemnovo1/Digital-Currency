@@ -1,0 +1,21 @@
+所有代码运行的环境：Python3.7	
+第三方库版本汇总：
+bs4		0.0.1	
+cryptocmd	0.4.1
+pandas		0.23.3
+requests		2.19.1
+urllib3		1.23	
+websocket	0.2.1
+
+附加说明：
+所有代码上传地址：https://github.com/Chemnovo1/Digital-Currency
+其中CoinMarketCap、Investing为两家第三方数字货币统计平台，其他均为交易平台。
+建议通过定期爬取全量数据的方式，获取和保存数据。即使是粒度为小时的数据，平台1000条的最大单次获取量，大约40天内更一次即可，更新频率并不会很高，不会造成多少人力上的浪费。而且全量数据跟增量数据是一样的，任何时间获取全量数据的准确性都没有问题，这一点我有比对确认过。
+增量数据获取部分：Binance提供了K线终止的参数，所以可以稳定的获取增量数据。其他的交易网站我尝试过很多次，可以成功连接下载增量数据，不过我没能把增量数据有规律地整理起来，这块工作我得承认是自己代码功底上的不足。
+另外，我没有编增量代码的两个网站的增量API文档如下：
+HitBTC网：
+连接地址：wss://api.hitbtc.com/api/2/ws
+API文档地址：https://api.hitbtc.com/#subscribe-to-candles
+ZB网（注：增量数据没有K线数据）：
+连接地址：wss://api.zb.cn:9999/websocket
+API文档地址：https://www.zb.cn/i/developer/websocketApi#wsmarket
